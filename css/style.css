@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Righteous|Ubuntu:700');
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+div.pimg1 {
+	background: url(../assets/img/bg2.jpg);
+	min-height: 220px;
+	position: relative;
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+div.pimg2 {
+	background: url(../assets/img/bg5.jpg);
+	min-height: 220px;	
+	position: relative;
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#map {
+	height: 400px;
+	width: 100%;
+}
+.mediaicon {
+	width: 100%;
+	height: 200px;
+	background: #000;
+}
+
+/* ------- Home Section ---------*/
+section#home {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	background: url(../assets/img/bg1.jpg) no-repeat bottom right;
+	background-size: cover;
+	background-position:center;
+}
+section#particles-js { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+}
+section#home .welcome {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	font-size: 38px;
+	width: 700px;
+	height: 40px;
+	pointer-events: none;
+	font-family: 'Electrolize', sans-serif;
+	padding: 0;
+	color: #fff;
+}
+section#home .mzpoon {
+	position: absolute;
+	top: 250px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:300px;
+	height: 60px;
+	font-size: 48px;
+	margin: auto;
+	color: #fff;
+	border-top: 2px solid #fff;	
+	border-bottom: 2px solid #fff;	
+	padding: 0;
+}
+section#home .mzintro {
+	position: absolute;
+	top: 355px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:400px;
+	height: 30px;
+	font-size: 16px;
+	font-family: 'Electrolize', sans-serif;
+	margin: auto;
+	color: #fff;
+	padding: 0;
+}
+section#home .object {
+	animation: MoveUpDown 1.5s linear infinite;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 700px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+@keyframes MoveUpDown {
+	0%, 100% {bottom: 0;}
+	50% {bottom: 25px;}
+}
+
+/* ------- Information Section ---------*/
+section#information {
+	width: 100%;
+	position: relative;
+	padding-bottom: 100px;
+}
+section .space {
+	margin-top: 40px;
+}
+section .space1 {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+section .headline {
+	width: 230px;
+	margin-bottom: 5px;
+	border-top: 3px solid #000; 
+}
+section .photo {
+	height: 220px;
+	float: center;
+	text-align: center;
+}
+section .proletter {
+	float:left;
+	text-align: left;
+}
+section .proletter h1 {
+	font-size: 48px;
+	padding: 0;
+	margin: 0;
+}
+section .proletter h2 {
+	font-size: 13px;
+	font-family: 'Electrolize', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+section .proletter p {
+	font-size: 16px;
+	font-family: 'Electrolize', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+section .personal {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	float: center;
+}
+section .personal h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	text-decoration: underline;
+	text-align: center;
+}
+section .personal h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+section .personal p {
+	margin: 0;
+	padding-bottom: 10px;
+	font-family: 'Electrolize', sans-serif;
+	font-size: 14px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    border: none;
+    outline: 1px solid #000;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.open, .accordion:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 12px;
+    background-color: white;
+    display: none;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+.panel p{
+	margin-top: 15px;
+	padding:0;
+	font-size: 16px;
+	font-family: 'Electrolize', sans-serif;
+}
+@media (max-width: 768px){
+	section .proletter {
+		padding-top: 25px;
+		float: center;
+		text-align: center;
+	}
+	section .headline {
+		width: 230px;
+		margin: auto;
+		margin-bottom: 5px;
+		border-top: 3px solid #000; 
+	}
+}
+
+
+/* ------- SKILL Section ---------*/
+section#skill {
+	width: 100%;
+	color: #fff;
+	padding-bottom: 100px;
+}
+section#skill h2 {
+	font-size:36px;
+	padding-top: 150px;
+}
+section .headline1 {
+	width: 230px;
+	margin: auto;
+	margin-bottom: 5px;
+	border-top: 3px solid #fff; 
+}
+section .headline2 {
+	width: 130px;
+	margin: auto;
+	margin-bottom: 5px;
+	border-top: 3px solid #000; 
+}
+
+/* ------- RESUME Section ---------*/
+section#resume {
+	float: center;
+	margin:0;
+	padding:0;
+	background: url(../assets/img/bg3.png);
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	width:100%;
+	height: 200px;
+}
+
+/* ------- RESUME Section ---------*/
+section#test01 {
+	width: 100%;height: 500px;background: #252525;
+}
+
+
+/* ------- COMING Section ---------*/
+section.coming {
+	color: #000;
+	text-align: center;
+	height: 500px;
+	width: 100%;
+}
+section.coming h1{
+	top:200px;
+}

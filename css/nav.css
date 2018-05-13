@@ -1,0 +1,150 @@
+
+.on-top {
+	z-index:99999;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	font-family: 'Ubuntu', sans-serif;	
+	box-sizing: border-box;
+	transition: .5s;
+}
+/* Black is the scroll display */
+@media screen and (min-width: 768px) {
+	nav.black{
+		background:rgb(0,0,0, .8);
+		height: 60px;
+		padding: 0px 30px;
+		z-index: 1;
+	}
+	nav.black .logo img {
+		height: 65px;
+		opacity: 1;
+		padding-top: 5px;
+	}
+	nav.black ul {
+		float: right;
+		margin: 0;
+		padding-top: 20px;
+		display: flex;	
+	}
+	nav.black ul li a {
+		line-height: : 40px;
+		color: white;
+		font-size: 12px;
+		padding: 5px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: .5s;
+	}
+	/* Scroll page active style */
+	nav.black .active00
+	{
+		background: white;
+		text-decoration: none;
+	}
+	nav.black .active00 a
+	{
+		color: black;
+	}	
+}
+
+nav .logo {
+	float: left;
+}
+nav .logo img {
+	height: 80px;
+	opacity: 0.5;
+	padding: 10px 15px;
+	transition: .5s;
+}
+nav ul {
+	float: right;
+	margin: 0;
+	padding: 25px 10px;
+	display: flex;	
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	line-height: : 80px;
+	color: rgb(255, 255, 255, 0.4);
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+}
+
+.responsive-bar {
+	display: none;
+}
+
+@media (max-width: 768px){
+	.responsive-bar {
+		display: block;
+		width: 100%;
+		height: 50px;
+		background: #000000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 5px 10px;
+		box-sizing: border-box;
+		z-index: 2;
+	}
+	.responsive-bar .ti-menu {
+		float: right;
+		padding-top:5px;
+		cursor: pointer;
+		z-index: 1;
+	}
+	.responsive-bar .logo img {
+		float: left;
+		height: 42px;
+	}
+	nav .logo {
+		display: none;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		z-index: 1;
+	}	
+	nav ul {
+		position: absolute;
+		background: rgb(0,0,0, .8);
+		width: 100%;
+		padding: 0;
+		padding-top: 14px;
+		top:50px;
+		left: 0;
+		float: none;
+		display: none;	
+	}
+	nav ul.active1 {
+		display: block;
+	}
+	nav ul li {
+		width: 100%;
+		height: 45px;
+		left: 0;
+		padding: 0;
+		text-align: center;
+	}
+	nav ul li a {
+		width: 100%;
+		left: 0;
+		padding: 0;
+		line-height: 30px !important;
+	}
+}
+
